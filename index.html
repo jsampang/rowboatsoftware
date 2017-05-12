@@ -10,6 +10,27 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+
+		.header-filter:after {
+			background: rgba(101, 47, 142, 0.64);
+			background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+			background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+			background: -webkit-linear-gradient(135deg, rgba(34, 83, 105, 0.78) 0%, rgba(125, 46, 185, 0.45) 100%);
+		}
+		
+		.header-filter:after {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			display: block;
+			left: 0;
+			top: 0;
+			content: "";
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+	</style>
 </head>
 
 <body>
@@ -27,10 +48,10 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="time-tracker/add-project.html" target="_blank">Add Project </a></li>
-					<li><a href="time-tracker/add-time-date.html" target="_blank">Add Time & Date</a></li>
-					<li><a href="https://rowboatsoftware.com/" target="_blank">Live Site</a></li>
-					<li><a href="http://intranet.rowboatsoftware.com/" target="_blank">CMS</a></li>
+					<li><a href="time-tracker/add-project.html" target="_blank">Project Tracker </a></li>
+					<li><a href="time-tracker/add-time-date.html" target="_blank">Time Tracker</a></li>
+					<li><a href="#" target="_blank">&nbsp;</a></li>
+					<li><a href="#" target="_blank">&nbsp;</a></li>
 				</ul>
 			</nav>
 		</header>
