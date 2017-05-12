@@ -21,6 +21,10 @@
 	<link rel="stylesheet" type="text/css" href="css/material-kit.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<style>
+		.section {
+			padding: 50px 0px 0px;
+		}
+		
 		.timeline-comment-wrapper {
 			position: relative;
 			padding-left: 60px;
@@ -103,6 +107,14 @@
 			border: 1px solid #ccc;
 			border-radius: 5px;
 		}
+		select.group-submit {
+			height: 42px;
+			width: 100%;
+			margin-right: 5px;
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
 		
 		.flex-center {
 			display: flex;
@@ -114,6 +126,28 @@
 			color: #FFFFFF;
 			margin-top: 12px;
 			border-radius: 5px;
+		}
+		
+		.table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 2px;
+		}
+		
+		.table>tbody>tr>td,
+		.table>tbody>tr>th,
+		.table>tfoot>tr>td,
+		.table>tfoot>tr>th,
+		.table>thead>tr>td,
+		.table>thead>tr>th {
+			padding: 15px 11px 16px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			border-top: 1px solid #ddd;
+		}
+		
+		thead {
+			background-color: #f6f8fa;
 		}
 	</style>
 </head>
@@ -147,7 +181,10 @@
 							<img src="images/rowboatsoftware-logo.png" alt="RowboatSoftware Logo" data-placement="bottom">
 						</a>
 					</div>
-					
+					<div class="item">
+						<div class="sublogo">
+							<h4>PHX Project Tracker 2017 <small style="color:#fff; font-size:11px">v1.0</small></h4></div>
+					</div>
 				</div>
 			</div>
 
@@ -178,15 +215,89 @@
 
 		<!-- Start Main -->
 		<div class="main main-raised">
+
 			<div class="container">
 				<div class="section text-center section-landing">
-					<div class="row" style="height:500px">
+					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<h2>Rowboat Software Time Tracking Project</h2>
-							<div class="title-header text-center margin-bottom-20"><img src="https://rowboatsoftware.com/images/dot.png"></div>
-							<h4><a href="add-project.html">Add Project Page View</a></h4>
-							<h4><a href="add-time-date.html">Add Date and Time View</a></h4>
+
+							<h5><b>Directions:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h5>
 						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container margin-bottom-60">
+				<div class="row margin-top-40xx margin-bottom-60">
+					<div class="col-md-12">
+
+						<div class="timeline-comment-wrapper">
+							<div class="avatar-parent-child timeline-comment-avatar">
+								<a href="">
+									<img alt="" class="" src="images/rowboatsoftware-avatar.png">
+								</a>
+							</div>
+							<div class="timeline-comment">
+								<div class="timeline-comment-body">
+									<form>
+										<label>Add Project</label>
+										<div class="flex-center">
+											<input type="text" placeholder="Project Name" name="ProjectName" class="group-submit" required="">
+											
+											
+											
+											
+											
+											<button class="btn btn-custom button-contact-submit" type="submit"><i class="fa fa-plus" aria-hidden="true"></i> ADD</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="timeline-comment-result">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="text-center">&nbsp;</th>
+											<th>Project Name <i class="fa fa-fw fa-sort"></i></th>
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
+											<th class="text-right">&nbsp;</th>
+											<th class="text-center">&nbsp;</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">&nbsp;</td>
+											<td>Lucid Agency</td>
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
+											<th class="text-right">&nbsp;</th>
+											<th class="text-center">&nbsp;</th>
+										</tr>
+										<tr>
+											<td class="text-center">&nbsp;</td>
+											<td>Rowboat Software</td>
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
+											<th class="text-right">&nbsp;</th>
+											<th class="text-center">&nbsp;</th>
+										</tr>
+										<tr>
+											<td class="text-center">&nbsp;</td>
+											<td>ULS</td>
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
+											<th class="text-right">&nbsp;</th>
+											<th class="text-center">&nbsp;</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
