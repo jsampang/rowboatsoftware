@@ -16,6 +16,18 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	
+	<script src="path/to/jquery.js"></script> 
+    <script src="path/to/jquery.nice-select.js"></script>
+	<link rel="stylesheet" href="path/to/nice-select.css">
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+  $('select').niceSelect();
+});
+</script>
+	
+	
 
 	<!--    CSS Files -->
 	<link rel="stylesheet" type="text/css" href="css/material-kit.css" />
@@ -151,6 +163,19 @@
 		thead {
 			background-color: #f6f8fa;
 		}
+		select {
+  position: relative;
+}
+
+/* Style by class. Effects the text of the contained options. */
+.blueText {
+  color: #0000FF;
+}
+
+/* Style by id. Effects position of the select drop down. */
+#styledSelect {
+  left: 100px;
+}
 	</style>
 </head>
 
@@ -248,16 +273,27 @@
 
 											<select class="group-submit" required placeholder="Project Name" oninvalid="this.setCustomValidity('Enter Project Name Here')" oninput="setCustomValidity('')">
 												<option value="" disabled selected>Project Name</option>
-												<option value="1">Lucid Agency</option>
-												<option value="2">Rowboat Software</option>
-												<option value="3">ULS</option>
+												<option value="1">Arete</option>
+												<option value="2">C02 Laser</option>
+												<option value="3">Jubilee</option>
+												<option value="4">Lucid Agency</option>
+												<option value="5">Pool Service</option>
+												<option value="6">Rowboat Software</option>
+												<option value="7">Universal Laser Systems</option>
 											</select>
 
 											<select class="group-submit" required placeholder="Enter Employee Name" oninvalid="this.setCustomValidity('Enter Employee Name Here')" oninput="setCustomValidity('')">
 												<option value="" disabled selected>Employee Name</option>
-												<option value="1">Chris Cotty</option>
-												<option value="2">Marina Stover</option>
-												<option value="3">Joven Sampang</option>
+												<option value="1">John Kobinski</option>
+												<option value="2">Christa Johnson</option>
+												<option value="3">Marina Stover</option>
+												<option value="4">Joven Sampang</option>
+												<option value="5">Chris Cotty</option>
+												<option value="6">Jolene Newton</option>
+												<option value="7">Trevor O'Hara</option>
+
+												
+												
 											</select>
 
 											<input type="text" class="group-submit" required placeholder="Hours" oninvalid="this.setCustomValidity('Enter Your Hours Here')" oninput="setCustomValidity('')" class="group-submit" style="width:30%;">
@@ -312,6 +348,13 @@
 				</div>
 			</div>
 
+			<select>
+  <option data-display="Select">Nothing</option>
+  <option value="1">Some option</option>
+  <option value="2">Another option</option>
+  <option value="3" disabled>A disabled option</option>
+  <option value="4">Potato</option>
+</select>
 
 			<!-- Start Icons -->
 			<div class="section-cta">
