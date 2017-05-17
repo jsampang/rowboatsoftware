@@ -16,18 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	
-	<script src="path/to/jquery.js"></script> 
-    <script src="path/to/jquery.nice-select.js"></script>
-	<link rel="stylesheet" href="path/to/nice-select.css">
-	
-	<script type="text/javascript">
-	$(document).ready(function() {
-  $('select').niceSelect();
-});
-</script>
-	
-	
 
 	<!--    CSS Files -->
 	<link rel="stylesheet" type="text/css" href="css/material-kit.css" />
@@ -163,19 +151,15 @@
 		thead {
 			background-color: #f6f8fa;
 		}
-		select {
-  position: relative;
-}
-
-/* Style by class. Effects the text of the contained options. */
-.blueText {
-  color: #0000FF;
-}
-
-/* Style by id. Effects position of the select drop down. */
-#styledSelect {
-  left: 100px;
-}
+		
+		ul {
+			list-style-type: none;
+		}
+		
+		.dropdown {
+			position: relative;
+			left: 11px;
+		}
 	</style>
 </head>
 
@@ -273,27 +257,16 @@
 
 											<select class="group-submit" required placeholder="Project Name" oninvalid="this.setCustomValidity('Enter Project Name Here')" oninput="setCustomValidity('')">
 												<option value="" disabled selected>Project Name</option>
-												<option value="1">Arete</option>
-												<option value="2">C02 Laser</option>
-												<option value="3">Jubilee</option>
-												<option value="4">Lucid Agency</option>
-												<option value="5">Pool Service</option>
-												<option value="6">Rowboat Software</option>
-												<option value="7">Universal Laser Systems</option>
+												<option value="1">Lucid Agency</option>
+												<option value="2">Rowboat Software</option>
+												<option value="3">ULS</option>
 											</select>
 
 											<select class="group-submit" required placeholder="Enter Employee Name" oninvalid="this.setCustomValidity('Enter Employee Name Here')" oninput="setCustomValidity('')">
 												<option value="" disabled selected>Employee Name</option>
-												<option value="1">John Kobinski</option>
-												<option value="2">Christa Johnson</option>
-												<option value="3">Marina Stover</option>
-												<option value="4">Joven Sampang</option>
-												<option value="5">Chris Cotty</option>
-												<option value="6">Jolene Newton</option>
-												<option value="7">Trevor O'Hara</option>
-
-												
-												
+												<option value="1">Chris Cotty</option>
+												<option value="2">Marina Stover</option>
+												<option value="3">Joven Sampang</option>
 											</select>
 
 											<input type="text" class="group-submit" required placeholder="Hours" oninvalid="this.setCustomValidity('Enter Your Hours Here')" oninput="setCustomValidity('')" class="group-submit" style="width:30%;">
@@ -310,34 +283,81 @@
 								<table class="table">
 									<thead>
 										<tr>
-											<th width="2%">&nbsp;</th>
-											<th width="28%">Project Name <i class="fa fa-fw fa-sort"></i></th>
-											<th width="26%">Employee Name <i class="fa fa-fw fa-sort"></i></th>
-											<th width="24%">Hours <i class="fa fa-fw fa-sort"></i></th>
-											<th width="20%">Date <i class="fa fa-fw fa-sort"></i></th>
+											<th class="text-center">&nbsp;</th>
+											<th>Project Name <i class="fa fa-fw fa-sort"></i></th>
+											<th>Employee Name <i class="fa fa-fw fa-sort"></i></th>
+											<th>Hours <i class="fa fa-fw fa-sort"></i></th>
+											<th class="text-right">Date <i class="fa fa-fw fa-sort"></i></th>
+											<th class="text-center">&nbsp;</th>
+											<th class="text-center">Action</th>
+											
+
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>&nbsp;</td>
+											<td class="text-center">&nbsp;</td>
 											<td>Lucid Agency</td>
 											<td>Chris Cotty</td>
 											<td>40 hrs</td>
-											<td>5/12/2017</td>
+											<td class="text-right">5/12/2017</td>
+											<td class="text-center">&nbsp;</td>
+											<td>
+												<ul>
+													<li class="dropdown">
+														<a href="#" data-toggle="dropdown">
+															<i class="material-icons">more_vert</i></a>
+														<ul class="dropdown-menu">
+															<li><a href="#">Delete</a></li>
+															<li><a href="#">Edit</a></li>
+
+														</ul>
+													</li>
+												</ul>
+											</td>
+											
 										</tr>
 										<tr>
-											<td>&nbsp;</td>
+											<td class="text-center">&nbsp;</td>
 											<td>Rowboat Software</td>
 											<td>Joven Sampang</td>
 											<td>40 hrs</td>
-											<td>5/12/2017</td>
+											<td class="text-right">5/12/2017</td>
+											<td class="text-center">&nbsp;</td>
+											<td>
+												<ul>
+													<li class="dropdown">
+														<a href="#" data-toggle="dropdown">
+															<i class="material-icons">more_vert</i></a>
+														<ul class="dropdown-menu">
+															<li><a href="#">Delete</a></li>
+															<li><a href="#">Edit</a></li>
+
+														</ul>
+													</li>
+												</ul>
+											</td>
 										</tr>
 										<tr>
-											<td>&nbsp;</td>
-											<td>Universal Laser Systems</td>
+											<td class="text-center">&nbsp;</td>
+											<td>ULS</td>
 											<td>Marina Stover</td>
 											<td>40 hrs</td>
-											<td>5/12/2017</td>
+											<td class="text-right">5/12/2017</td>
+											<td class="text-center">&nbsp;</td>
+											<td>
+												<ul>
+													<li class="dropdown">
+														<a href="#" data-toggle="dropdown">
+															<i class="material-icons">more_vert</i></a>
+														<ul class="dropdown-menu">
+															<li><a href="#">Delete</a></li>
+															<li><a href="#">Edit</a></li>
+
+														</ul>
+													</li>
+												</ul>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -348,13 +368,6 @@
 				</div>
 			</div>
 
-			<select>
-  <option data-display="Select">Nothing</option>
-  <option value="1">Some option</option>
-  <option value="2">Another option</option>
-  <option value="3" disabled>A disabled option</option>
-  <option value="4">Potato</option>
-</select>
 
 			<!-- Start Icons -->
 			<div class="section-cta">
