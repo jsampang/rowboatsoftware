@@ -1,0 +1,134 @@
+		.section {
+			padding: 50px 0px 0px;
+		}
+		
+		.timeline-comment-wrapper {
+			position: relative;
+			padding-left: 60px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border-top: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+		}
+		
+		.timeline-comment {
+			position: relative;
+			background-color: #fff;
+			border: 1px solid #d1d5da;
+			border-radius: 3px;
+		}
+		
+		.timeline-comment-result {
+			position: relative;
+			background-color: #fff;
+			border: 1px solid #d1d5da;
+			border-radius: 3px;
+			margin-top: 10px;
+		}
+		
+		.timeline-comment-header {
+			padding: 15px;
+			color: #586069;
+			background-color: #f6f8fa;
+			border-bottom: 1px solid #d1d5da;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		
+		.timeline-comment:after,
+		.timeline-comment:before {
+			right: 100%;
+			top: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		
+		.timeline-comment:after {
+			border-color: rgba(255, 255, 255, 0);
+			border-right-color: #fff;
+			border-width: 10px;
+			margin-top: -10px;
+		}
+		
+		.timeline-comment:before {
+			border-color: rgba(209, 213, 218, 0);
+			border-right-color: #d1d5da;
+			border-width: 11px;
+			margin-top: -11px;
+		}
+		
+		.timeline-comment-body {
+			padding: 15px;
+		}
+		
+		.timeline-comment-avatar {
+			float: left;
+			margin-left: -66px;
+			border-radius: 3px;
+			margin-top: 35px
+		}
+		
+		.avatar-parent-child {
+			position: relative;
+		}
+		
+		input.group-submit {
+			height: 42px;
+			width: 100%;
+			margin-right: 5px;
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		select.group-submit {
+			height: 42px;
+			width: 100%;
+			margin-right: 5px;
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #fff;
+		}
+		
+		.flex-center {
+			display: flex;
+			align-items: center;
+		}
+		
+		.btn.btn-custom {
+			background-color: #fc7700;
+			color: #FFFFFF;
+			margin-top: 12px;
+			border-radius: 5px;
+		}
+		
+		.table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 2px;
+		}
+		
+		.table>tbody>tr>td,
+		.table>tbody>tr>th,
+		.table>tfoot>tr>td,
+		.table>tfoot>tr>th,
+		.table>thead>tr>td,
+		.table>thead>tr>th {
+			padding: 15px 11px 16px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			border-top: 1px solid #ddd;
+		}
+		
+		thead {
+			background-color: #f6f8fa;
+		}
+		
+		ul {
+			list-style-type: none;
+		}
