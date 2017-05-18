@@ -1,1 +1,1 @@
-# rowboatsoftware Time Tracker 
+# Rowboat Software Time Tracker 
